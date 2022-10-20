@@ -1,0 +1,27 @@
+/* колір лого #2196F3 #000000 */
+/* колір h2 h3 навігація header #212121 */
+/* колір h1  #FFFFFF */
+/* колір контакти хедер і р
+#757575  */
+/* колір Замовити послугу текст 
+#FFFFFF фон #2196F3 */
+/* колір фокуса #2196F3 */
+ /* футер адрес #FFFFFF  контакти rgba(255, 255, 255, 0.6)*/
+
+ .page{
+    color: #212121;
+}
+ /* header */
+ ul{
+    list-style:none
+ }
+ .page-header{ background-color: #FFFFFF;}
+ .logo-web{ color:#2196F3;}
+ .logo-studio{ color: #000000;}
+ .site-nav .link{ color: #212121 ;}
+ .site-nav .link:hover,
+ .site-nav .link:focus {
+    color: #2196F3;}
+ .contact-nav .link{ color:#757575 ;}
+ .contact-nav .link:hover,
+ .contact-nav .link:focus {color: #2196F3;}
