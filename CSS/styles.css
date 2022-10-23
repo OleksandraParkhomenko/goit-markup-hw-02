@@ -1,12 +1,4 @@
-/* колір лого #2196F3 #000000 */
-/* колір h2 h3 навігація header #212121 */
-/* колір h1  #FFFFFF */
-/* колір контакти хедер і р
-#757575  */
-/* колір Замовити послугу текст 
-#FFFFFF фон #2196F3 */
-/* колір фокуса #2196F3 */
- /* футер адрес #FFFFFF  контакти rgba(255, 255, 255, 0.6)*/
+
 
  :root{
     --primary-text-color:#212121;
@@ -42,33 +34,75 @@
 .logo-studio.secondary{color: var(--primary-white-color);}
 
  /* Nav */
- .site-nav .link{ color: var(--primary-text-color) ;}
+ .site-nav .link{ color: var(--primary-text-color) ; text-decoration:none;}
  .site-nav .link:hover,
  .site-nav .link:focus {
     color: var(--accent-color);}
  .site-nav .link.current{ color: var(--accent-color);}
- .contact-nav .link{ color: var(--secondary-text-color) ;}
+ .contact-nav .link{ color: var(--secondary-text-color) ; text-decoration:none;}
  .contact-nav .link:hover,
  .contact-nav .link:focus {color: var(--accent-color);}
+ .site-nav.list .contact-nav.list{ 
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing:0.02em;}
  
  /* hero */
  .hero{ background-color: var(--hero-background-color);}
+ .hero-title{ color: var(--primary-white-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;}
  
 
 
 
  /* sections */
- .feature-list .text{ color:var(--secondary-text-color);}
+ .feature-list .text{ color:var(--secondary-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height:1.71;
+   }
+ .feature-list {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.13;
+    text-transform: uppercase;}
+
+.section-title{ 
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+       }
+.feature-list.positions {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.9;
+        }
+.feature-list .text.position{font-family: 
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
+   }
+
 
  /* footer */
- .page-footer{background-color: #2F303A;}
- .footer-nav .adress{color: var(--primary-white-color);}
+ .page-footer{background-color: var(--hero-background-color);}
+ .footer-nav .adress{color: var(--primary-white-color); text-decoration: none;}
     .footer-nav .adress:hover,
     .footer-nav .adress:focus{color: var(--accent-color);}
-.footer-nav .link{color:rgba(255, 255, 255, 0.6);}
+.footer-nav .link{color:rgba(255, 255, 255, 0.6); text-decoration: none;}
 .footer-nav .link:hover,
 .footer-nav .link:focus{color: var(--accent-color);}
-
+.footer-nav.list{ 
+    font-size: 14px;
+    line-height: 1.7;
+    }
 /* button */
 .button{
     color: var(--primary-text-color);
@@ -77,12 +111,22 @@
 .button.primary{
     color: var(--primary-white-color);
     background-color: var(--accent-color) ;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.86;
+letter-spacing: 0.06em;
 }
 .button.primary:hover,
 .button.primary:focus{ background: var(--button-focus-color) ;}
 .button.secondary{
     color: var(--primary-text-color);
     background-color: var(--button-second-color);
+}
+.button.secondary{ color: var(--primary-text-color);
+background-color: var(--button-second-color);
+font-weight: 500;
+font-size: 16px;
+line-height: 1.63;
 }
 .button.secondary:hover,
 .button.secondary:focus{
