@@ -8,20 +8,84 @@
 /* колір фокуса #2196F3 */
  /* футер адрес #FFFFFF  контакти rgba(255, 255, 255, 0.6)*/
 
+ :root{
+    --primary-text-color:#212121;
+    --accent-color:#2196F3;
+    --secondary-text-color:#757575;
+    --primary-white-color: #FFFFFF;
+    --logo-primary-color:#000000;
+    --hero-background-color:#2F303A;
+    --button-focus-color: #188CE8;
+    --button-second-color: #F5F4FA
+
+    }
  .page{
-    color: #212121;
-}
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;}
+    
  /* header */
  ul{
     list-style:none
  }
- .page-header{ background-color: #FFFFFF;}
- .logo-web{ color:#2196F3;}
- .logo-studio{ color: #000000;}
- .site-nav .link{ color: #212121 ;}
+ /* Logo */
+ .logo{font-family:  Raleway, sans-serif ;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;}
+ .logo-web{ color: var(--accent-color);
+  }
+
+ .logo-studio.primary{ color: var(--logo-primary-color)
+  }
+.logo-studio.secondary{color: var(--primary-white-color);}
+
+ /* Nav */
+ .site-nav .link{ color: var(--primary-text-color) ;}
  .site-nav .link:hover,
  .site-nav .link:focus {
-    color: #2196F3;}
- .contact-nav .link{ color:#757575 ;}
+    color: var(--accent-color);}
+ .site-nav .link.current{ color: var(--accent-color);}
+ .contact-nav .link{ color: var(--secondary-text-color) ;}
  .contact-nav .link:hover,
- .contact-nav .link:focus {color: #2196F3;}
+ .contact-nav .link:focus {color: var(--accent-color);}
+ 
+ /* hero */
+ .hero{ background-color: var(--hero-background-color);}
+ 
+
+
+
+ /* sections */
+ .feature-list .text{ color:var(--secondary-text-color);}
+
+ /* footer */
+ .page-footer{background-color: #2F303A;}
+ .footer-nav .adress{color: var(--primary-white-color);}
+    .footer-nav .adress:hover,
+    .footer-nav .adress:focus{color: var(--accent-color);}
+.footer-nav .link{color:rgba(255, 255, 255, 0.6);}
+.footer-nav .link:hover,
+.footer-nav .link:focus{color: var(--accent-color);}
+
+/* button */
+.button{
+    color: var(--primary-text-color);
+    background-color: var(--primary-white-color);
+}
+.button.primary{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color) ;
+}
+.button.primary:hover,
+.button.primary:focus{ background: var(--button-focus-color) ;}
+.button.secondary{
+    color: var(--primary-text-color);
+    background-color: var(--button-second-color);
+}
+.button.secondary:hover,
+.button.secondary:focus{
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+}
