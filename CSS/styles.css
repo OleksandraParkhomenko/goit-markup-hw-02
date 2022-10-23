@@ -63,7 +63,6 @@
 
  /* sections */
  .feature-list .text{ color:var(--secondary-text-color);
-    font-weight: 400;
     font-size: 14px;
     line-height:1.71;
    }
@@ -84,12 +83,20 @@
     font-size: 16px;
     line-height: 1.9;
         }
-.feature-list .text.position{font-family: 
-    font-weight: 400;
+.feature-list .text.position{
     font-size: 16px;
     line-height: 1.9;
    }
-
+   .portfolio-titles{ color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;}
+    .feature-list .link{ text-decoration: none;}
+    .feature-list .text{ 
+        font-size: 16px;
+        line-height: 1.88;
+       }
 
  /* footer */
  .page-footer{background-color: var(--hero-background-color);}
